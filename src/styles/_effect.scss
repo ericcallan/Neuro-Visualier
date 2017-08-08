@@ -1,0 +1,84 @@
+$red:rgba(255,0,0,1);
+$lightred:rgba(237,36,103,1);
+$magenta:rgba(221,14,152,1);
+$pink:rgba(255,0,255,1);
+$hotpink:rgba(210,0,255,1);
+
+$purple:rgba(114,87,247,1);
+$blue:rgba(29,61,242,1);
+$turquoise:rgba(35,122,239,1);
+$brightblue:rgba(0,207,255,1);
+
+$cyan:rgba(0,0,255,1);
+$lightgreen:rgba(0,255,148,1);
+$green:rgba(0,255,0,1);
+$lightyellow:rgba(187,255,0,1);
+$yellow:rgba(227,255,0,1);
+
+$darktellow:rgba(255,235,0,1);
+$lightorange:rgba(255,190,0,1);
+$orange:rgba(255,145,0,1);
+$darkorange:rgba(249,111,16,1);
+
+.test {
+    height:100%;
+    width:100%;
+    background: #fff;
+    transition:1s background-color ease-in-out .5s;
+
+    &.l1 {
+        background-color:$red;
+    }
+    &.l2 {
+        background-color:$lightred;
+    }
+    &.l3 {
+        background-color:$magenta;
+    }
+    &.l4 {
+        background-color:$pink;
+    }
+    &.l5 {
+        background-color:$hotpink;
+    }
+    &.l6 {
+        background-color:$purple;
+    }
+    &.l7 {
+        background-color:$blue;
+    }
+    &.l8 {
+        background-color:$turquoise;
+    }
+    &.l9 {
+        background-color:$brightblue;
+    }
+    &.l10 {
+        background-color:$cyan;
+    }
+    &.l11 {
+        background-color:$lightgreen;
+    }
+    &.l12 {
+        background-color:$green;
+    }
+    &.l13 {
+        background-color:$lightyellow;
+    }
+    &.l14 {
+        background-color:$yellow;
+    }
+    &.l15 {
+        background-color:$darktellow;
+    }
+    &.l16 {
+        background-color:$lightorange;
+    }
+    &.l17 {
+        background-color:$orange;
+    }
+    &.l18 {
+        background-color:$darkorange;
+    }
+
+}

@@ -1,0 +1,19 @@
+
+.playball {
+    #ball, #shadow {
+        height:200px;
+        width:200px;
+        position: absolute;
+        top:50%;
+        left:50%;
+        background-color:#000;
+        border-radius:100%;
+        transform: translate(-50%, -50%);
+    }
+
+    #shadow {
+        z-index:1;
+        background-color:#ccc;
+        opacity:.4;
+    }
+}

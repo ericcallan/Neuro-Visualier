@@ -1,0 +1,54 @@
+<html>
+<head>
+	<title>Neuro Visualizer</title>
+	<link rel="stylesheet" type="text/css" href="/styles/main.css">
+</head>
+<body>
+	<div class="main">
+		<div id="gradient"></div>
+		<div class="welcome">
+			<div class="overlay"></div>
+			<section id="home">
+				<div class="content">
+					<h2>Neuro Visualizer</h2>
+
+					<button>begin</button>
+				</div>
+			</section>
+			<section id="about" class="hide no-display">
+				<div class="content">
+					<h2>welcome</h2>
+					<p>Sometimes life gets tough, lets take a moment to sit back and appreciate the little things in life.</p>
+					<button>next</button>
+				</div>
+			</section>
+			<section id="choice" class="hide no-display">
+				<div class="content">
+					<h2>Like Music?</h2>
+					<button data-state="music">let's rock</button>
+				</div>
+			</section>
+			<section id="start" class="hide no-display">
+				<div class="content">
+					<p class="help help-music">Ready?</p>
+					<p>Sit back and relax. Your experience will start momentarily.</p>
+				</div>
+			</section>
+			<section class="hide no-display" id="experience">
+				<canvas id="app"></canvas>
+				<div class="end">
+					<p>Thank you, your session has ended.</p>
+				</div>
+			</section>
+		</div>
+	</div>
+<script
+	src="https://code.jquery.com/jquery-3.1.1.min.js"
+	integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+	crossorigin="anonymous">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js"></script>
+<script src="/scripts/bundle.js"></script>
+
+</body>
+</html>
