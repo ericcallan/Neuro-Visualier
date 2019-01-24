@@ -1,0 +1,310 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url(https://fonts.googleapis.com/css?family=Raleway:100,400);
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Raleway', sans-serif;
+  overflow: hidden; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+/* to remove the top and left whitespace */
+html, body {
+  width: 100%;
+  height: 100%; }
+
+/* just to be sure these are full screen*/
+canvas {
+  display: block; }
+
+/* To remove the scrollbars */
+body {
+  margin: 0;
+  overflow: hidden; }
+
+.main {
+  overflow: hidden; }
+
+.graph h2 {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  border-radius: 100%;
+  transform: translate(-50%, 10px); }
+
+.graph ul {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  height: 100%; }
+  .graph ul li {
+    flex: 1;
+    transition: .25s all ease-in-out;
+    list-style: none;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative; }
+    .graph ul li div {
+      max-height: 100%;
+      height: 0;
+      width: 100%; }
+    .graph ul li span {
+      height: 0;
+      max-height: 100%;
+      width: 100%;
+      position: absolute;
+      opacity: .2;
+      z-index: -1; }
+    .graph ul li p {
+      color: #000;
+      font-weight: 800;
+      background-color: #ccc;
+      font-size: 10px;
+      padding: .5rem;
+      position: absolute; }
+    .graph ul li:nth-child(1) div {
+      background: #cdeb8e;
+      background: -moz-linear-gradient(top, #cdeb8e 0%, #a5c956 100%);
+      background: -webkit-linear-gradient(top, #cdeb8e 0%, #a5c956 100%);
+      background: linear-gradient(to bottom, #cdeb8e 0%, #a5c956 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cdeb8e', endColorstr='#a5c956',GradientType=0 ); }
+    .graph ul li:nth-child(1) span {
+      background-color: green; }
+    .graph ul li:nth-child(2) div {
+      background: #93cede;
+      background: -moz-linear-gradient(top, #93cede 0%, #75bdd1 41%, #49a5bf 100%);
+      background: -webkit-linear-gradient(top, #93cede 0%, #75bdd1 41%, #49a5bf 100%);
+      background: linear-gradient(to bottom, #93cede 0%, #75bdd1 41%, #49a5bf 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#93cede', endColorstr='#49a5bf',GradientType=0 ); }
+    .graph ul li:nth-child(2) span {
+      background-color: cyan; }
+    .graph ul li:nth-child(3) div {
+      background: #ff3019;
+      background: -moz-linear-gradient(top, #ff3019 0%, #cf0404 100%);
+      background: -webkit-linear-gradient(top, #ff3019 0%, #cf0404 100%);
+      background: linear-gradient(to bottom, #ff3019 0%, #cf0404 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3019', endColorstr='#cf0404',GradientType=0 ); }
+    .graph ul li:nth-child(3) span {
+      background-color: red; }
+    .graph ul li:nth-child(4) div {
+      background: #e570e7;
+      background: -moz-linear-gradient(top, #e570e7 0%, #c85ec7 47%, #a849a3 100%);
+      background: -webkit-linear-gradient(top, #e570e7 0%, #c85ec7 47%, #a849a3 100%);
+      background: linear-gradient(to bottom, #e570e7 0%, #c85ec7 47%, #a849a3 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e570e7', endColorstr='#a849a3',GradientType=0 ); }
+    .graph ul li:nth-child(4) span {
+      background-color: purple; }
+    .graph ul li:nth-child(5) div {
+      background: #f9c667;
+      background: -moz-linear-gradient(top, #f9c667 0%, #f79621 100%);
+      background: -webkit-linear-gradient(top, #f9c667 0%, #f79621 100%);
+      background: linear-gradient(to bottom, #f9c667 0%, #f79621 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9c667', endColorstr='#f79621',GradientType=0 ); }
+    .graph ul li:nth-child(5) span {
+      background-color: orange; }
+
+.playball #ball, .playball #shadow {
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: #000;
+  border-radius: 100%;
+  transform: translate(-50%, -50%); }
+
+.playball #shadow {
+  z-index: 1;
+  background-color: #ccc;
+  opacity: .4; }
+
+.test {
+  height: 100%;
+  width: 100%;
+  background: #fff;
+  transition: 1s background-color ease-in-out .5s; }
+  .test.l1 {
+    background-color: red; }
+  .test.l2 {
+    background-color: #ed2467; }
+  .test.l3 {
+    background-color: #dd0e98; }
+  .test.l4 {
+    background-color: magenta; }
+  .test.l5 {
+    background-color: #d200ff; }
+  .test.l6 {
+    background-color: #7257f7; }
+  .test.l7 {
+    background-color: #1d3df2; }
+  .test.l8 {
+    background-color: #237aef; }
+  .test.l9 {
+    background-color: #00cfff; }
+  .test.l10 {
+    background-color: blue; }
+  .test.l11 {
+    background-color: #00ff94; }
+  .test.l12 {
+    background-color: lime; }
+  .test.l13 {
+    background-color: #bbff00; }
+  .test.l14 {
+    background-color: #e3ff00; }
+  .test.l15 {
+    background-color: #ffeb00; }
+  .test.l16 {
+    background-color: #ffbe00; }
+  .test.l17 {
+    background-color: #ff9100; }
+  .test.l18 {
+    background-color: #f96f10; }
+
+.welcome {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  margin: 0; }
+  .welcome .overlay {
+    background-color: rgba(255, 255, 255, 0);
+    transition: .75s background-color ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+    .welcome .overlay.active {
+      background-color: rgba(255, 255, 255, 0.5); }
+  .welcome section {
+    width: 100%;
+    height: 100%;
+    transition: .25s all ease-in-out;
+    top: 0;
+    left: 0;
+    position: absolute; }
+    .welcome section.hide {
+      opacity: 0; }
+    .welcome section.no-display {
+      display: none; }
+    .welcome section .content {
+      text-align: center;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      text-align: left;
+      width: 60%; }
+    .welcome section h2 {
+      color: #fff;
+      font-size: 1.5rem;
+      letter-spacing: 4px;
+      padding: 1rem 0; }
+    .welcome section p {
+      color: #fff;
+      letter-spacing: 1px;
+      line-height: 22px;
+      padding: 10px 0;
+      font-size: 1rem; }
+    .welcome section button {
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      color: white;
+      transition: .25s all ease-in-out;
+      cursor: pointer;
+      margin: 10px 0;
+      font-size: 1rem;
+      letter-spacing: 2px;
+      font-weight: 200;
+      border: 1px solid #fff;
+      border-radius: 10px;
+      display: block;
+      width: 10rem;
+      margin: 10px 0; }
+      .welcome section button:hover {
+        background-color: rgba(255, 255, 255, 0.5); }
+    .welcome section:nth-of-type(3) button {
+      width: 20rem;
+      margin: 15px 0; }
+    .welcome section .help {
+      display: none; }
+      .welcome section .help.active {
+        display: block; }
+    .welcome section .logo {
+      height: 280px;
+      position: absolute;
+      top: 10px;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+    .welcome section .data-img {
+      width: 80%;
+      margin-left: 20%; }
+    .welcome section .end {
+      top: 50%;
+      left: 50%;
+      background-color: red;
+      position: absolute;
+      transform: translate(-50%, -50%);
+      height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #fff;
+      border-radius: 5px;
+      opacity: 0;
+      transition: .5s all ease-in-out;
+      padding: 1rem;
+      border: 3px solid #ccc; }
+      .welcome section .end p {
+        color: #000; }
+      .welcome section .end.active {
+        opacity: 1; }
+
+input:focus, button:focus {
+  outline: none; }
+
+#gradient {
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  margin: 0px; }
