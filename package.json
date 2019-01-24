@@ -8,7 +8,7 @@
   },
   "main": "server.js",
   "scripts": {
-    "start": "gulp && node server.js",
+    "start": "node server.js",
     "watch": "nodemon server.js",
     "format": "prettier-standard 'src/scripts/**/*.js'"
   },
